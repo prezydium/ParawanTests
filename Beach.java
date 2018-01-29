@@ -14,17 +14,15 @@ public class Beach<T> extends ArrayList {
         int y = 0;
         for (int i = 0; i < 200; i++) {
 
-
             Place place = new Place(i, x, y, PlaceStatus.FREE);
             this.add(place);
             x++;
-            y++;
-            if (x >= 19) {
+
+            if (x >= 20) {
                 x = 0;
+                y++;
             }
-            if (y >= 9) {
-                y = 0;
-            }
+
         }
 
     }
