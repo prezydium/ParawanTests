@@ -6,9 +6,9 @@ public class Place {
     indywidualne id oraz współrzędne
      */
     private int id, x, y;
-    private Object status;
+    private PlaceStatus status;
 
-    public Place(int id, int x, int y, Object status) {
+    public Place(int id, int x, int y, PlaceStatus status) {
         this.id = id;
         this.x = x;
         this.y = y;
@@ -33,5 +33,9 @@ public class Place {
     public void showInfo(){
         System.out.println("Id miejsca: " + id + " || " + "" +
                 "X: " + x + " || " + "Y: " + y + " || " + "Status: " + status);
+    }
+
+    public void setStatus(PlaceStatus status) {
+        this.status = status;
     }
 }
